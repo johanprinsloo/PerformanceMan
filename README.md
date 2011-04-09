@@ -3,7 +3,7 @@
 
 A portable performance monitoring library for scala based on [Sigar](http://www.hyperic.com/products/sigar).
 
-Useage
+Usage
 ------
 
 ###Synchronous
