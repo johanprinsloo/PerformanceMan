@@ -8,6 +8,7 @@ Usage
 ###Subscribe
 Subscribe your Actor to the performance monitor actor:
 
+<pre><code>
     class TestActor extends Actor {
     var loadreport: List[Double] = List.empty
     var reportcount = 0
@@ -29,7 +30,7 @@ Subscribe your Actor to the performance monitor actor:
   testee1.start
   
   ProfileActor ! Subscribe(testee1)
-
+</code></pre>
 
 <object src="https://gist.github.com/914709.js?file=PerformanceManSubscribe.scala"></object>
 
