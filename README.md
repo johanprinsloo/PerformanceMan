@@ -8,7 +8,7 @@ Usage
 ###Subscribe
 Subscribe your Actor to the performance monitor actor:
 
-<script src="https://gist.github.com/914709.js?file=PerformanceManSubscribe.scala"></script>
+<object src="https://gist.github.com/914709.js?file=PerformanceManSubscribe.scala"></object>
 
 ###Asyncronous
 Anonymous actor based callback mechanism:
