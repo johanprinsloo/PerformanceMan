@@ -40,7 +40,9 @@ Anonymous actor based callback mechanism:
 <pre><code>
 ProfileActor ! CPUnumRequest( testee )
 </code></pre>
+
 ###Synchronous
+
 A thin wrapper around the Sigar libs:
 <pre><code>
 val cpucount = CPUprofile.getCPUcount
