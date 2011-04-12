@@ -30,6 +30,22 @@ class CPUprofileActorTest extends FlatSpec with ShouldMatchers with BeforeAndAft
     }
   }
 
+  class TestActor2 extends Actor {
+    var loadreport: List[Double] = List.empty
+    var reportcount = 0
+
+    def act = {
+      loop {
+        react {
+          case load_report: CPUloadReport => {
+            loadreport = load_report.cpuloads
+            reportcount = reportcount + 1
+          }
+        }
+      }
+    }
+  }
+
   var testee  = new TestActor
 
   override def beforeAll() {
