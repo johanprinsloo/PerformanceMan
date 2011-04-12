@@ -7,7 +7,8 @@ Usage
 ------
 ###Subscribe
 Subscribe your Actor to the performance monitor actor:
-
+Create an Actor that can consume 'CPUloadReport' messages and subscribe it by sending a 'Subscribe' message.
+ 
 <pre><code>
     class TestActor extends Actor {
     var loadreport: List[Double] = List.empty
