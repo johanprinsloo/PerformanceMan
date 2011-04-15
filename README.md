@@ -10,7 +10,7 @@ Subscribe your Actor to the performance monitor actor:
 Create an Actor that can consume 'CPUloadReport' messages and subscribe it by sending a 'Subscribe' message.
  
 <pre><code>
-    class TestActor extends Actor {
+  class TestActor extends Actor {
     var loadreport: List[Double] = List.empty
     var reportcount = 0
     
@@ -38,19 +38,19 @@ Create an Actor that can consume 'CPUloadReport' messages and subscribe it by se
 ###Asyncronous
 Anonymous actor based callback mechanism:
 <pre><code>
-ProfileActor ! CPUnumRequest( testee )
+    ProfileActor ! CPUnumRequest( testee )
 </code></pre>
 
 ###Synchronous
 
 A thin wrapper around the Sigar libs:
 <pre><code>
-val cpucount = CPUprofile.getCPUcount
-val cpufreq = CPUprofile.getCPUFrequency
-val coreloads = CPUprofile.getCPUload
-for (load <- coreloads.get) {
-  println( load )
-}
+   val cpucount = CPUprofile.getCPUcount
+   val cpufreq = CPUprofile.getCPUFrequency
+   val coreloads = CPUprofile.getCPUload
+   for (load <- coreloads.get) {
+     println( load )
+   }
 </code></pre>
  
 
