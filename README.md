@@ -47,8 +47,8 @@ A thin wrapper around the Sigar libs:
    val cpucount = CPUprofile.getCPUcount
    val cpufreq = CPUprofile.getCPUFrequency
    val coreloads = CPUprofile.getCPUload
-   for (load <- coreloads.get) {
-     println( load )
+   for (load <- coreloads.get)  {
+      println( load )
    }
  </code></pre>
 
