@@ -32,7 +32,6 @@ Create an Actor that can consume 'CPUloadReport' messages and subscribe it by se
   
   ProfileActor ! Subscribe(testee1)
 </code></pre>
-<object src="https://gist.github.com/914709.js?file=PerformanceManSubscribe.scala"></object>
 
 ###Asyncronous
 Anonymous actor based callback mechanism:
