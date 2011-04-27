@@ -35,21 +35,22 @@ Create an Actor that can consume 'CPUloadReport' messages and subscribe it by se
 
 ###Asyncronous
 Anonymous actor based callback mechanism:
-<pre><code>
+``` scala
     ProfileActor ! CPUnumRequest( testee )
-</code></pre>
+```
 
 ###Synchronous
 
 A thin wrapper around the Sigar libs:
-<pre><code>
+``` scala
+
    val cpucount = CPUprofile.getCPUcount
    val cpufreq = CPUprofile.getCPUFrequency
    val coreloads = CPUprofile.getCPUload
    for (load <- coreloads.get)  {
       println( load )
    }
- </code></pre>
+```
 
 
 
