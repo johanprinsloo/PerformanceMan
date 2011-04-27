@@ -9,7 +9,7 @@ Usage
 Subscribe your Actor to the performance monitor actor:
 Create an Actor that can consume 'CPUloadReport' messages and subscribe it by sending a 'Subscribe' message.
  
-<pre><code>
+``` scala
   class TestActor extends Actor {
      var loadreport: List[Double] = List.empty
      var reportcount = 0
@@ -31,7 +31,7 @@ Create an Actor that can consume 'CPUloadReport' messages and subscribe it by se
   testee1.start
   
   ProfileActor ! Subscribe(testee1)
-</code></pre>
+```
 
 ###Asyncronous
 Anonymous actor based callback mechanism:
